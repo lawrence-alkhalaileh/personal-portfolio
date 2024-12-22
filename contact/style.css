@@ -161,46 +161,6 @@ nav ul a:hover {
     color: #1900ff;
 }
 
-/* .home {
-    margin-top: 4rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 1.5rem;
-    padding: 4rem 2rem;
-}
-
-.home h1 {
-    font-size: 5rem;
-}
-
-.home h1 span {
-    font-family: var(--sec-font-family);
-    color: var(--custom-color);
-    font-weight: bold;
-    letter-spacing: 2px;
-}
-
-.home p {
-    width: 800px;
-    font-size: 2rem;
-    color: var(--font-color);
-    text-align: center;
-    font-weight: bold;
-}
-
-.home button {
-    cursor: pointer;
-    padding: 10px 40px;
-    color: var(--bg-color);
-    border: 0;
-    background-color: var(--custom-color);
-    border-radius: 4px;
-    font-size: 20px;
-} */
-
 /* footer */
 
 footer {
