@@ -140,7 +140,7 @@ header {
 
 
 .about-icons i{
-    color: white;
+    color: var(--sec-bg-color);
 }
 
 .about-icons .html:hover {
