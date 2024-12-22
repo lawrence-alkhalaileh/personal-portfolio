@@ -82,6 +82,10 @@ header {
     background-color: var(--font-color);
 }
 
+.active{
+    border-bottom: 2px solid var(--custom-color);
+}
+
 /* about section */
 .about {
     display: flex;
