@@ -1,6 +1,6 @@
 # Personal Portfolio Website
 
-you can view it live from here  
+You can view the live website here: [My Personal Portfolio](https://lawrence-alkhalaileh.github.io/personal-portfolio/)
 
 Welcome to my personal portfolio website! This project serves as a platform to showcase who I am, my work, and how to get in touch with me. Below are the main sections of the website.
 
