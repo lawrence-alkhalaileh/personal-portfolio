@@ -1,10 +1,11 @@
 :root {
     --bg-color: #F5F5F5;
     --sec-bg-color: #FFF;
-    --custom-color: #7D45EA;
-    --font-color: #707070;
+    --custom-color: #682ae4;
+    --font-color: #484848;
+    --footer-bg-color: #343A40;
     --font-family: Arial, Helvetica, sans-serif;
-    --sec-font-family: 'Delicious Handrawn', Arial, Helvetica, sans-serif;
+    --sec-font-family: 'Caveat', Arial, Helvetica, sans-serif;
 }
 
 * {
@@ -23,74 +24,62 @@ body {
 }
 
 .container {
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-/* small */
-@media (min-width: 768px) {
-    .container {
-        width: 750px;
-    }
+button {
+    padding: 10px 20px;
+    background-color: var(--custom-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
 }
-
-/* medium */
-@media (min-width: 992px) {
-    .container {
-        width: 970px;
-    }
-}
-
-/* large */
-@media (min-width: 1200px) {
-    .container {
-        width: 1170px;
-    }
-}
-
-/* navbar */
 
 header {
-    font-family: var(--sec-font-family);
-    background-color: var(--sec-bg-color);
-    padding: 1rem 2rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.navbar .logo {
-    letter-spacing: 3px;
-}
-
-.navbar .logo .code {
-    font-family: var(--font-family);
-    color: var(--custom-color);
+    background: var(--sec-bg-color);
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-nav ul {
-    display: flex;
-    justify-content: flex-end;
-    gap: 3rem;
+.logo {
+    font-size: 1.8rem;
+    font-family: var(--sec-font-family);
+}
+
+.logo .code {
+    font-family: var(--font-family);
+    color: var(--custom-color);
+}
+
+.nav-links {
     list-style: none;
+    display: flex;
+    gap: 1rem;
 }
 
-nav ul a {
-    font-size: 2rem;
-    color: var(--font-color);
+.nav-links li a {
     text-decoration: none;
-    padding: 0px 10px;
+    color: var(--font-color);
+    font-weight: bold;
+    font-size: 25px;
+    font-family: var(--sec-font-family);
+    padding: 5px 20px;
     border-radius: 4px;
 }
 
-nav ul a:hover {
-    background-color: #414141;
+.nav-links li a:hover {
     color: var(--custom-color);
+    background-color: var(--font-color);
 }
 
 /* projects section */
@@ -103,7 +92,8 @@ nav ul a:hover {
     align-items: center;
     text-align: center;
 }
-.projects-text p{
+
+.projects-text p {
     margin-top: 10px;
 }
 
@@ -176,37 +166,77 @@ nav ul a:hover {
 /* footer */
 
 footer {
-    margin-top: 20px;
-    background-color: #000;
-    color: #fff;
+    background: var(--footer-bg-color);
+    color: white;
     padding: 40px 0px;
+    margin-top: 20px;
 }
 
 .footer {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1px 1fr;
     align-items: center;
+    gap: 20px;
 }
 
-.footer .footer-about h1 {
-    color: var(--sec-bg-color);
-    letter-spacing: 2px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid var(--font-color);
+.footer-about {
+    text-align: start;
 }
 
-.footer .footer-about p {
-    padding-top: 10px;
-    color: var(--font-color);
-    width: 300px;
+.footer-about h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
 }
 
-.footer .footer-socials i {
-    color: white;
-    margin: 2px;
+.footer-about p {
+    font-size: 0.9rem;
 }
 
-.footer .footer-separator {
-    height: 100px;
-    border: 1px solid white;
+.footer-separator {
+    background: white;
+    height: 100%;
+    width: 1px;
+}
+
+.footer-socials {
+    text-align: end;
+}
+
+.footer-socials h1 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    margin-right: 18px;
+}
+
+.footer-socials a {
+    color: var(--bg-color);
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer-socials a:hover {
+    color: var(--custom-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .footer {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .footer-separator {
+        display: none;
+    }
 }
