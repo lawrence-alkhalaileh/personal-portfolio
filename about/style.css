@@ -150,6 +150,65 @@ header {
     color: #1900ff;
 }
 
+.contact {
+    height: 80vh;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.contact p {
+    margin: auto;
+    margin-bottom: 20px;
+    max-width: 400px;
+    color: var(--font-color);
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.contact .input-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.contact .input-wrap input {
+    width: 49%;
+}
+
+.contact .input-wrap-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .input-wrap-2 input {
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.contact input {
+    padding: 0.5rem;
+    border: none;
+    font-size: 0.9rem;
+}
+
+.contact .input-wrap-2 textarea {
+    padding: 0.5rem;
+    border: none;
+    font-size: 0.9rem;
+}
+
+.contact .input-wrap-2 textarea:focus,
+.contact input:focus {
+    outline: none;
+}
+
+.contact .btn-wrapper {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+
 /* footer */
 
 footer {

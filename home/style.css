@@ -137,12 +137,18 @@ header {
     padding: 50px 0px;
 }
 
+
+
+.about-icons i{
+    color: white;
+}
+
 .about-icons .html:hover {
     color: #ff5100;
 }
 
 .about-icons .js:hover {
-    color: #dfe913;
+    color: #e9f508;
 }
 
 .about-icons .node:hover {
