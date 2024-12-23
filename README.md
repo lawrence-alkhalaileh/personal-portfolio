@@ -2,6 +2,8 @@
 
 You can view the live website here: [My Personal Portfolio](https://lawrence-alkhalaileh.github.io/personal-portfolio/)
 
+you can though view the figma design from here: [figma](https://www.figma.com/design/BNjTW5F2aDc96e1hymGmuC/Untitled?node-id=0-1&t=tVWr1LQIXjHLyxNK-1)
+
 Welcome to my personal portfolio website! This project serves as a platform to showcase who I am, my work, and how to get in touch with me. Below are the main sections of the website.
 
 ## Features
